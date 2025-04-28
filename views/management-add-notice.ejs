@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Notice</title>
+  <link rel="stylesheet" href="/css/management-home.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">PlacementCell</div>
+      <div class="nav-links">
+        <a href="/management-home" class="logout-btn">🏠 Home</a>
+        <a href="/logout" class="logout-btn">Logout</a>
+      </div>
+    </nav>
+
+    <section class="main-content">
+      <h1 class="fade-in">Add New Notice 📢</h1>
+      <form action="/add-notice" method="POST" class="company-form">
+        <textarea name="noticeText" placeholder="Write your notice here..." required style="height: 150px; resize: none;"></textarea>
+        <button type="submit" class="submit-btn">➕ Add Notice</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>

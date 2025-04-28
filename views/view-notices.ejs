@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Notices | PlacementCell</title>
+  <link rel="stylesheet" href="/css/view-notices.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📢 Notices</h1>
+
+    <div class="notice-list">
+      <% notices.slice().reverse().forEach(notice => { %>
+        <div class="notice-card">
+          <h2><%= notice.title %></h2>
+          <p><%= notice.description %></p>
+        </div>
+      <% }) %>
+    </div>    
+
+    <a href="/student" class="back-btn">⬅️ Back to Home</a>
+  </div>
+</body>
+</html>

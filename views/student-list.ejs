@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Students List</title>
+  <link rel="stylesheet" href="/css/management-home.css">
+</head>
+<body>
+  <h1>Registered Students</h1>
+  <ul>
+    <% students.forEach(student => { %>
+      <li><%= student.email %></li>
+    <% }); %>
+  </ul>
+  <a href="/management-home">Back to Management Home</a>
+</body>
+</html>

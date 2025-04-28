@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Placement Cell</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+  <h1 class="main-heading">Welcome to Placement Cell</h1>
+
+  <form action="/login" method="POST">
+    <h2 class="form-title">Login</h2>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" required>
+
+    <label for="role">Role:</label>
+    <select name="role" required>
+      <option value="student">Student</option>
+      <option value="management">Management</option>
+    </select>
+
+    <button type="submit">Login</button>
+
+    <p class="register-text">Don't have an account? <a href="/register">Register here</a></p>
+  </form>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <p><a href="#" onclick="toggleContact()">Contact</a></p>
+    <p id="contact-info" class="contact-info" style="display:none;">placementcell@gmail.com</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Placement Cell. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleContact() {
+      var contactInfo = document.getElementById('contact-info');
+      if (contactInfo.style.display === "none") {
+        contactInfo.style.display = "block";
+      } else {
+        contactInfo.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

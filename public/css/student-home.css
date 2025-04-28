@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7ff, #cceeff);
+  color: #003366;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007acc;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.6s ease-in-out;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  animation: fadeIn 1.2s ease-in-out; /* Added fadeIn animation */
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease; /* Added transition for smooth color and transform change */
+}
+
+.nav-links a:hover {
+  color: #ffdd57;
+  transform: scale(1.1); /* Added scale effect on hover */
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: fadeInUp 1s ease; /* Added fadeInUp animation */
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  color: #004d80;
+}
+
+/* Company List */
+.company-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.company-card {
+  background-color: #ffffff;
+  border: 2px solid #66ccff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in-out forwards; /* Fade-in for company cards */
+}
+
+.company-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.3);
+}
+
+.company-card h2 {
+  color: #005b99;
+  margin-bottom: 10px;
+}
+
+.company-card p {
+  margin: 8px 0;
+}
+
+/* Buttons */
+.apply-btn,
+.notice-btn,
+.logout-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #005b99;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: fadeIn 1.5s ease-in-out; /* Added fadeIn animation to buttons */
+}
+
+.apply-btn:hover,
+.notice-btn:hover,
+.logout-btn:hover {
+  background-color: #003f73;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

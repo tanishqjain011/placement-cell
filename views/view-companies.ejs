@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Companies | PlacementCell</title>
+  <link rel="stylesheet" href="/css/view-companies.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>🏢 All Companies</h1>
+
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Company Name</th>
+          <th>Exam Date</th>
+          <th>Eligibility</th>
+          <th>Package</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% companies.forEach(company => { %>
+          <tr>
+            <td><%= company.name %></td>
+            <td><%= company.examDate %></td>
+            <td><%= company.eligibility %></td>
+            <td><%= company.package %> LPA</td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+
+    <a href="/management-home" class="back-btn">← Back to Dashboard</a>
+  </div>
+</body>
+</html>

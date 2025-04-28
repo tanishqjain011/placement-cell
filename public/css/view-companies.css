@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  }
+  
+  .container {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.8s ease;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+  
+  .styled-table thead tr {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 12px 18px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-btn:hover {
+    background: #004099;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

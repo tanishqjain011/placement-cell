@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa; /* very soft light gray */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+  
+  /* Container */
+  .container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem 3rem;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    color: #1a1a2e; /* deep navy blue for text */
+  }
+  
+  /* Heading */
+  .container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #0056b3; /* deep blue */
+  }
+  
+  /* Notice List */
+  .notice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Individual Notice Card */
+  .notice-card {
+    background: #f1f5f9; /* very light soft blue/gray */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .notice-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notice-card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+    color: #003566; /* darker blue heading */
+  }
+  
+  .notice-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #495057; /* muted text */
+  }
+  
+  /* Back Button */
+  .back-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 25px;
+    background: #0056b3;
+    color: #ffffff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    background: #004494;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container {
+      padding: 1.5rem 1rem;
+    }
+  
+    .container h1 {
+      font-size: 2rem;
+    }
+  
+    .notice-card {
+      padding: 1rem;
+    }
+  }
+  

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Companies List</title>
+  <link rel="stylesheet" href="/css/management-home.css">
+</head>
+<body>
+  <h1>Companies</h1>
+  <ul>
+    <% companies.forEach(company => { %>
+      <li>
+        <strong>Name:</strong> <%= company.name %> |
+        <strong>Exam Date:</strong> <%= company.examDate.toDateString() %> |
+        <strong>Eligibility:</strong> <%= company.eligibilityCriteria %> |
+        <strong>Package:</strong> ₹<%= company.package %> LPA
+      </li>
+    <% }); %>
+  </ul>
+  <a href="/management-home">Back to Management Home</a>
+</body>
+</html>

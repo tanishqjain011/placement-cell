@@ -1,0 +1,145 @@
+/* public/css/login.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.main-heading {
+  margin-top: 40px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form-title {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+input, select {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 14px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 5px #fff;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #ff758c;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.4s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #ff7eb3;
+}
+
+.register-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.register-text a {
+  color: #ffb6b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section (Updated for Top Right Corner) */
+.contact-section {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-section a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-section a:hover {
+  color: #ffd700;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0.7;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Entrance Animation */
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Home</title>
+  <link rel="stylesheet" href="/css/student-home.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">Placement Cell</div>
+      <div class="nav-links">
+        <a href="/student/notices" class="notice-btn">View Notices</a> <!-- Updated link to notices page -->
+        <a href="/logout" class="logout-btn">Logout</a>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <h1>Welcome, <span class="student-name">Student</span>!</h1>
+      <p>Check eligible companies and apply now.</p>
+
+      <div class="company-list">
+        <% companies.forEach(function(company) { %>
+          <div class="company-card">
+            <h2><%= company.name %></h2>
+            <p><strong>Eligibility:</strong> <%= company.eligibility %></p>
+            <p><strong>Package:</strong> <%= company.package %> LPA</p>
+            <p><strong>Exam Date:</strong> <%= company.examDate %></p>
+
+            <form action="/apply/<%= company._id %>" method="POST">
+              <button type="submit" class="apply-btn">Apply Now</button>
+            </form>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

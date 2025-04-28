@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | PlacementCell</title>
+  <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+
+  <div class="register-container">
+    <div class="register-card">
+
+      <h1>Register 🚀</h1>
+      <p>Create your account to get started!</p>
+
+      <form action="/register" method="POST" class="register-form">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="password" name="password" placeholder="Enter your password" required>
+
+        <select name="role" required>
+          <option value="">Select your role</option>
+          <option value="student">Student</option>
+          <option value="management">Management</option>
+        </select>
+
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+
+      <p class="login-link">Already have an account? <a href="/login">Login here</a></p>
+
+    </div>
+  </div>
+
+</body>
+</html>

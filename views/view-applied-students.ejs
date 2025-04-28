@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Applied Students | PlacementCell</title>
+  <link rel="stylesheet" href="/css/view-applied-students.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Applied Students</h1>
+
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Student Email</th>
+          <th>Company Applied</th>
+          <th>Applied On</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% appliedStudents.forEach(student => { %>
+          <tr>
+            <td><%= student.studentEmail %></td>
+            <td><%= student.companyName %></td>
+            <td><%= new Date(student.appliedAt).toLocaleString() %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+
+    <a href="/management-home" class="back-btn">← Back to Dashboard</a>
+  </div>
+</body>
+</html>

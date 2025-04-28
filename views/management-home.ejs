@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Management Dashboard | PlacementCell</title>
+  <link rel="stylesheet" href="/css/management-home.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">PlacementCell</div>
+      <div class="nav-links">
+        <a href="/logout" class="logout-btn">Logout</a>
+        <!-- Add Notice Button -->
+        <button class="add-notice-btn" id="addNoticeBtn">Add Notice</button>
+      </div>
+    </nav>
+
+    <!-- Add Notice Modal -->
+<!-- Add Notice Modal -->
+<div id="addNoticeModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModalBtn">&times;</span>
+    <h2>Add a New Notice</h2>
+    <form action="/management-home/add-notice" method="POST" class="notice-form">
+      <input type="text" name="title" placeholder="Notice Title" required>
+      <textarea name="description" placeholder="Notice Description" required></textarea>
+      <button type="submit" class="submit-btn">Add Notice</button>
+    </form>
+  </div>
+</div>
+
+
+    <!-- Main Content -->
+    <section class="main-content">
+      <h1 class="fade-in">Welcome, Management </h1>
+      <p class="fade-in delay-1">Manage your placement activities seamlessly!</p>
+
+      <!-- Quick Links -->
+      <div class="link-buttons slide-up">
+        <a href="/view-applied-students" class="btn">📚 View Applied Students</a>
+        <a href="/view-companies" class="btn">🏢 View Companies</a>
+      </div>
+
+      <!-- Add Company Box (Smaller) -->
+      <div class="add-company-box">
+        <h2>Add New Company</h2>
+        <form action="/add-company" method="POST" class="company-form">
+          <input type="text" name="name" placeholder="Company Name" required>
+          <input type="date" name="examDate" required>
+          <input type="text" name="eligibility" placeholder="Eligibility Criteria" required>
+          <input type="text" name="package" placeholder="Package (in LPA)" required>
+          <button type="submit" class="submit-btn">➕ Add Company</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    // Get modal and button elements
+    const modal = document.getElementById('addNoticeModal');
+    const addNoticeBtn = document.getElementById('addNoticeBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    // Open the modal when the "Add Notice" button is clicked
+    addNoticeBtn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // Close the modal when the close button is clicked
+    closeModalBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // Close the modal if the user clicks outside the modal
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
