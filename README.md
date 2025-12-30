@@ -1,4 +1,4 @@
-<img width="1026" height="926" alt="image" src="https://github.com/user-attachments/assets/ba2dc57f-076b-4188-b128-a0054e927644" />**🎓 Placement Cell Management System**
+Placement Cell Management System**
 
 A web-based Placement Cell Management System built to streamline and automate the placement process in colleges.
 The system enables efficient interaction between students, companies, and placement administrators, reducing manual work and improving transparency.
@@ -173,6 +173,7 @@ Tanishq Jain
 PLACEMENT-CELL/ ├── node_modules/ # Installed dependencies ├── public/css/ # Stylesheets ├── routes/ # Express route handlers ├── views/ # EJS templates (frontend views) ├── server.js # Entry point of the app ├── package.json # Project metadata and scripts └── README.md # Project documentation
 
 #CONTACT- tanishqjain3526@gmail.com
+
 
 
 
