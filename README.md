@@ -124,8 +124,9 @@ PLACEMENT-CELL/
 └── README.md            # Project documentation
 
 **📸 Screenshots**
-<img width="735" height="400" alt="image" src="https://github.com/user-attachments/assets/4643f68d-f0a2-42bb-8e88-670935f2fc37" /> <img width="735" height="400" alt="image" src="https://github.com/user-attachments/assets/6a7b4c15-d2e5-404a-bbc2-697e6a27bf29" />
 
+<img width="735" height="400" alt="image" src="https://github.com/user-attachments/assets/4643f68d-f0a2-42bb-8e88-670935f2fc37" /> 
+<img width="735" height="400" alt="image" src="https://github.com/user-attachments/assets/6a7b4c15-d2e5-404a-bbc2-697e6a27bf29" />
 <img width="735" height="400" alt="image" src="https://github.com/user-attachments/assets/1189b6ee-914b-49c3-b6b5-42c225eebf6b" />
 <img width="735" height="400" alt="image" src="https://github.com/user-attachments/assets/f0404527-0145-418a-87b9-cd63c750257d" />
 <img width="735" height="400" alt="image" src="https://github.com/user-attachments/assets/5e689997-b54c-4a4d-84b8-ff945c7c20f2" />
@@ -133,11 +134,11 @@ PLACEMENT-CELL/
 
 **🔐 Login Page**
 
-**🧑‍🎓 Student Dashboard
+🧑‍🎓 Student Dashboard
 
 🏢 Company Dashboard
 
-🧑‍💼 Admin Panel**
+🧑‍💼 Admin Panel
 
 **📌 Notes**
 
@@ -172,5 +173,6 @@ Tanishq Jain
 PLACEMENT-CELL/ ├── node_modules/ # Installed dependencies ├── public/css/ # Stylesheets ├── routes/ # Express route handlers ├── views/ # EJS templates (frontend views) ├── server.js # Entry point of the app ├── package.json # Project metadata and scripts └── README.md # Project documentation
 
 #CONTACT- tanishqjain3526@gmail.com
+
 
 
