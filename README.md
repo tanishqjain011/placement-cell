@@ -127,7 +127,8 @@ PLACEMENT-CELL/
 └── README.md            # Project documentation
 
 **📸 Screenshots**
-<img width="1470" height="834" alt="image" src="https://github.com/user-attachments/assets/b0c02a1a-0e65-4342-b880-7f1a865e7f65" />
+<img width="1470" height="835" alt="image" src="https://github.com/user-attachments/assets/4643f68d-f0a2-42bb-8e88-670935f2fc37" />
+
 
 
 
@@ -172,5 +173,6 @@ Tanishq Jain
 PLACEMENT-CELL/ ├── node_modules/ # Installed dependencies ├── public/css/ # Stylesheets ├── routes/ # Express route handlers ├── views/ # EJS templates (frontend views) ├── server.js # Entry point of the app ├── package.json # Project metadata and scripts └── README.md # Project documentation
 
 #CONTACT- tanishqjain3526@gmail.com
+
 
 
